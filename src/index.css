@@ -1,0 +1,149 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #eeeff1;
+}
+
+body, button {
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  flex: 0 0 320px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  height: 530px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.calculator {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-screen {
+  flex: 1;
+  text-align: right;
+}
+
+.calculator-screen-top {
+  height: 30px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.calculator-screen-bottom {
+  text-align: right;
+  font-size: 40px;
+  border: none;
+}
+
+.calculator-layout{
+  margin-top: 30px;
+}
+
+.calculator-layout-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.calculator-layout-row:last-child {
+  margin-bottom: 0;
+}
+
+.calculator-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  /* font-size: 20px; */
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.calculator-button:hover {
+  background: #f8f8f8;
+}
+
+.calculator-button.gray {
+  background: #f3f3f3;
+}
+
+.calculator-button.gray:hover {
+  background: #eaeaea;
+}
+
+.calculator-button.symbol {
+  font-size: 24px;
+}
+
+.calculator-button.equal {
+  width: 113px;
+  /* background: #ffcb8a; */
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  box-shadow: 0 5px 20px #c2e9fb;
+  color: #fff;
+  font-size: 30px;
+  transition: transform .2s;
+}
+
+.calculator-button.equal:hover {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  box-shadow: 0 5px 20px #a1c4fd;
+  transform: translate(0, -2px);
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #EC4989;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.main-btn1{
+  color: #26f8d1;
+}
+.main-btn2{
+  color: #e46364;
+}
